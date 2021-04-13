@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>ELIMINAR JUEGO</h1>
+    <form action="" method="post"> {% csrf_token %}
+        <p>Seguro que deseas eliminar este juego: "{{ doc.juego }}"</p>
+        <input type="submit" value="Confirmar">
+    </form>
+
+
+
+{% endblock content %}
